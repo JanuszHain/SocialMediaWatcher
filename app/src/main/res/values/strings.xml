@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Twitter Searcher</string>
+    <string name="noTweets">Loading tweets or no tweets avaible</string>
+    <string name="tweets">Tweets</string>
+    <string name="editFollowedTwitters">Edit Twitters</string>
+    <string name="followTwitter">Follow Twitter</string>
+    <string name="twitterUserName">Twitter user name</string>
+    <string name="twitterValue">Twitter sorting value</string>
+    <string name="name">Name</string>
+    <string name="noTwitterAccounts">No Twitter accounts</string>
+    <string name="allTwitters">All Twitter accounts</string>
+    <string name="chooseTwitters">Choose twitters</string>
+    <string name="deleteTwitters">Delete twitters</string>
+    <string name="noInternetConnection">No Internet connection</string>
+    <string name="sort">Sort</string>
+    <string name="menuSortDate">Sort by date</string>
+    <string name="menuSortValue">Sort by value</string>
+    <string name="deleteTwitter">Delete twitter</string>
+    <string name="doYouWantDeleteTwitters">Do you want to delete chosen Twitters?</string>
+    <string name="couldntDeleteTwitter">Couldn\'t delete twitter: </string>
+    <string name="twittersDeleted">Twitters deleted</string>
+    <string name="nameMustBeGiven">Name must be given</string>
+    <string name="screenNameMustBeGiven">Screen name of Twitter must be given</string>
+    <string name="valueMustBeGiven">Twitter value must be given</string>
+    <string name="twitterAdded">Twitter added</string>
+    <string name="updateTwitter">Update Twitter</string>
+    <string name="doYouWantToOverrideTwitter">Twitter already exists. Do you want to override it?</string>
+    <string name="twitterUpdated">Twitter updated</string>
+    <string name="licenses">Licenses</string>
+    <string name="couldntLoadTweets">Couldn\'t load tweets. Please, check Internet connection</string>
+    <string name="fullScreenMode">Fullscreen mode</string>
+
+</resources>

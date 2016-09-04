@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Twitter Searcher</string>
+    <string name="noTweets">Ładuję tweety lub brak dostępnych tweetów.</string>
+    <string name="tweets">Tweety</string>
+    <string name="editFollowedTwitters">Edytuj Twittery</string>
+    <string name="followTwitter">Dodaj Twittera</string>
+    <string name="twitterUserName">Nazwa konta na Twitterze</string>
+    <string name="twitterValue">Waga sortowania Twittera</string>
+    <string name="name">Nazwa</string>
+    <string name="noTwitterAccounts">Brak Twitterów</string>
+    <string name="allTwitters">Wszystkie Twittery</string>
+    <string name="chooseTwitters">Wybierz Twittery</string>
+    <string name="deleteTwitters">Usuń konta Twitterów</string>
+    <string name="noInternetConnection">Brak połączenia z siecią</string>
+    <string name="sort">Sortowanie</string>
+    <string name="menuSortDate">Sortuj według daty</string>
+    <string name="menuSortValue">Sortuj według wagi sortowania</string>
+    <string name="deleteTwitter">Usuń konto Twittera</string>
+    <string name="doYouWantDeleteTwitters">Czy chcesz usunąć konta wybranych Twitterów?</string>
+    <string name="couldntDeleteTwitter">Nie można było usunąć Twittera: </string>
+    <string name="twittersDeleted">Twittery usunięta</string>
+    <string name="nameMustBeGiven">Nazwa musi być wprowadzona</string>
+    <string name="screenNameMustBeGiven">Nazwa konta na Twitterze musi być wprowadzona</string>
+    <string name="valueMustBeGiven">Wartość sortowania musi być wprowadzona</string>
+    <string name="twitterAdded">Twitter dodany</string>
+    <string name="updateTwitter">Edytuj Twitter</string>
+    <string name="doYouWantToOverrideTwitter">Twitter już istnieje. Czy chcesz nadpisać?</string>
+    <string name="twitterUpdated">Twitter wyedytowany</string>
+    <string name="licenses">Licencje</string>
+    <string name="couldntLoadTweets">Nie można było wczytać tweetów. Proszę sprawdzić połączenie internetowe</string>
+    <string name="fullScreenMode">Tryb pełnoekranowy</string>
+</resources>
