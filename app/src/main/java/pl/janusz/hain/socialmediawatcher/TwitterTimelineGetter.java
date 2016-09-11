@@ -16,6 +16,7 @@ import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
+import pl.janusz.hain.socialmediawatcher.util.MyScheduler;
 import rx.Observable;
 import rx.Subscriber;
 
@@ -53,7 +54,7 @@ public class TwitterTimelineGetter {
     }
 
 
-    private void logIn() throws InterruptedException {
+    private synchronized void logIn() throws InterruptedException {
 
 
         if (TwitterGuestSession.isSessionExpiredOrNull()) {
@@ -107,7 +108,7 @@ public class TwitterTimelineGetter {
             }
         });
 
-        return observableGetTweets;
+        return observableGetTweets.subscribeOn(MyScheduler.getScheduler());
     }
 
     private Observable<ArrayList<Tweet>> createObservableReadTweets(final String screen_name, final int count, final long lastId) {
@@ -141,6 +142,6 @@ public class TwitterTimelineGetter {
             }
         });
 
-        return observableGetTweets;
+        return observableGetTweets.subscribeOn(MyScheduler.getScheduler());
     }
 }

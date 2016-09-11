@@ -5,6 +5,7 @@ import com.twitter.sdk.android.core.models.Tweet;
 import java.util.ArrayList;
 import java.util.Collections;
 
+import pl.janusz.hain.socialmediawatcher.util.MyScheduler;
 import rx.Observable;
 import rx.Observer;
 import rx.Subscriber;
@@ -60,11 +61,11 @@ public class TwitterTimeline {
     }
 
     public Observable<String> observableGetNewTweets() {
+
         Observable<String> observableGetTweets = Observable.create(new Observable.OnSubscribe<String>() {
             @Override
             public void call(final Subscriber<? super String> subscriber) {
                 Observable<ArrayList<Tweet>> observableGetTweets = twitterTimelineGetter.getObservableReadTweets(lastId);
-
                 Observer<ArrayList<Tweet>> myObserver = new Observer<ArrayList<Tweet>>() {
                     @Override
                     public void onCompleted() {
@@ -77,6 +78,7 @@ public class TwitterTimeline {
 
                     @Override
                     public void onNext(ArrayList<Tweet> tweets) {
+
                         if (tweets.size() > 0) {
                             addNewTweets(tweets);
                             subscriber.onNext(tweets.get(0).user.name);

@@ -1,7 +1,5 @@
 package pl.janusz.hain.socialmediawatcher;
 
-import android.util.Log;
-
 import com.twitter.sdk.android.core.models.Tweet;
 
 import java.util.ArrayList;
@@ -116,12 +114,10 @@ public class TwitterWall {
                 }
 
                 if (isTwitterTimelineSizeLowEnoughtToLoadMore(twitterTimeline)) {
-                    Log.d(getClass().getName(), "ENough to load more: " + twitterTimeline.getLenght());
                     addObservableToArrayList(twitterTimeline);
 
 
                     if (isNeededToLoadMore(twitterTimeline)) {
-                        Log.d(getClass().getName(), "isNeededToLoadMore " + twitterTimeline.getLenght());
                         loadTweetsWithObservables();
                     }
                 }
@@ -185,7 +181,6 @@ public class TwitterWall {
 
             Observable<String> mergedObservable = Observable.merge(observables);
             mergedObservable
-                    .subscribeOn(Schedulers.from(Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors())))
                     .toBlocking()
                     .forEach(actionOnNext);
 
